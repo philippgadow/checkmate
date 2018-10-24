@@ -1,0 +1,12 @@
+[Parameters]
+Name: ExampleRun
+Analyses: 13TeV
+RandomSeed: 10
+WriteDelphesEvents: False
+WritePythiaEvents: False
+SkipParamCheck: True
+
+[monoSWW]
+MGprocess: /work/proc_card_mg5.dat
+MGparam: /work/param_card.dat
+# MGrun: /work/run_card.dat

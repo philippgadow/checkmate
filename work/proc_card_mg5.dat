@@ -1,0 +1,33 @@
+#************************************************************
+#*                     MadGraph5_aMC@NLO                    *
+#*                                                          *
+#*                *                       *                 *
+#*                  *        * *        *                   *
+#*                    * * * * 5 * * * *                     *
+#*                  *        * *        *                   *
+#*                *                       *                 *
+#*                                                          *
+#*                                                          *
+#*         VERSION 2.6.3.2               2018-06-22         *
+#*                                                          *
+#*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+#*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+#*                                                          *
+#************************************************************
+#*                                                          *
+#*               Command File for MadGraph5_aMC@NLO         *
+#*                                                          *
+#*     run as ./bin/mg5_aMC  filename                       *
+#*                                                          *
+#************************************************************
+import model DarkHiggs2MDM
+define p = g u c d s u~ c~ d~ s~
+define j = g u c d s u~ c~ d~ s~
+define l+ = e+ mu+
+define l- = e- mu-
+define vl = ve vm vt
+define vl~ = ve~ vm~ vt~
+# define wdecay = j b b~ l+ l- ta+ ta- vl vl~
+# generate p p > zp > n1 n1 hs, (hs > w+ w-, w+ > wdecay wdecay, w- > wdecay wdecay)
+generate p p > zp > n1 n1 hs, (hs > w+ w-, w+ > j j, w- > j j)
+# generate p p > zp > n1 n1 hs, (hs > b b~)

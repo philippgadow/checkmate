@@ -8,7 +8,7 @@ ln -s /usr/lib/x86_64-linux-gnu/libgfortran.so.3 /usr/lib/libgfortran.so
 ln -s /usr/lib/x86_64-linux-gnu/libquadmath.so.0 /usr/lib/libquadmath.so
 
 # add model
-export PYTHONPATH=$PYTHONPATH:/work/
+export PYTHONPATH=$PYTHONPATH:/work/models
 
 # modify param card
 cp /work/param_card_default.dat /work/param_card.dat
@@ -16,7 +16,7 @@ cp /work/param_card_default.dat /work/param_card.dat
 COUPLING_GQ=0.25
 COUPLING_GX=1.00
 MIXING_TH=0.01
-MASS_MZp=1000.
+MASS_MZp=2500.
 MASS_MDM=200.
 MASS_MHs=160.
 

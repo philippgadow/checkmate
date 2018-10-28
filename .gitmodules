@@ -1,0 +1,3 @@
+[submodule "slurmy"]
+	path = slurmy
+	url = https://github.com/Thomas-Maier/slurmy.git

@@ -1,0 +1,2 @@
+*.pyo
+tqdm/__pycache__/

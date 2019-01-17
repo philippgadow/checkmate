@@ -28,4 +28,5 @@ define l- = e- mu-
 define vl = ve vm vt
 define vl~ = ve~ vm~ vt~
 define wdecay = j b b~ l+ l- ta+ ta- vl vl~
-generate p p > zp > n1 n1 hs, (hs > w+ w-, w+ > wdecay wdecay, w- > wdecay wdecay)
+# generate p p > zp > n1 n1 hs, (hs > w+ w-, w+ > wdecay wdecay, w- > wdecay wdecay)
+generate p p > zp > n1 n1 hs, (hs > b b~)

@@ -60,6 +60,10 @@ RUN ./configure --with-python=/usr/bin/python \
                 --with-rootsys=/usr/local \
                 --with-madgraph=/madgraph
 RUN make -j8
+RUN make AnalysisManager
+
+# add workdir
+ADD ./work /code
 
 # clean up
 WORKDIR /

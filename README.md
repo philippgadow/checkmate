@@ -23,3 +23,17 @@ source run.sh
 ```
 
 This will run the Docker image as a container and within the container it will call `work/run_example_in_docker.sh`.
+
+
+### Develop / add a new analysis
+
+You can add a new analysis with the analysis manager included in CheckMATE.
+Please read for details here: https://arxiv.org/abs/1503.01123
+
+Please enter:
+```
+source develop.sh
+cd /checkmate
+make AnalysisManager
+./bin/AnalysisManager
+```

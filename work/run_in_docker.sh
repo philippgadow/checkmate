@@ -41,11 +41,11 @@ sed -i -e "s/{__COUPLING_GQ__}/${COUPLING_GQ}/g" /work/param_card.dat
 sed -i -e "s/{__COUPLING_GX__}/${COUPLING_GX}/g" /work/param_card.dat
 sed -i -e "s/{__MIXING_TH__}/${MIXING_TH}/g" /work/param_card.dat
 sed -i -e "s/{__MASS_MZp__}/${MASS_MZp}/g" /work/param_card.dat
-sed -i -e "s/{__MASS_MDM__}/${MASS_MZp}/g" /work/param_card.dat
+sed -i -e "s/{__MASS_MDM__}/${MASS_MDM}/g" /work/param_card.dat
 sed -i -e "s/{__MASS_MHs__}/${MASS_MHs}/g" /work/param_card.dat
 
 # run CheckMATE
-/checkmate/bin/CheckMATE /work/example.in
+/checkmate/bin/CheckMATE /work/config.in
 
 # clean up
 rm -f /work/param_card.dat

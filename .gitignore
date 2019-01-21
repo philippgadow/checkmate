@@ -1,2 +1,3 @@
 *.pyo
+*.pkl
 tqdm/__pycache__/

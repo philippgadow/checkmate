@@ -6,7 +6,7 @@ WriteDelphesEvents: False
 WritePythiaEvents: False
 SkipParamCheck: True
 
-[monoSWW]
+[checkmate-run]
 MGprocess: /work/proc_card_mg5.dat
 MGparam: /work/param_card.dat
 # MGrun: /work/run_card.dat
